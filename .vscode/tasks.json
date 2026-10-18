@@ -1,0 +1,42 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Driver (KMDF Release x64)",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                "ring0/MyArkCore.vcxproj",
+                "/p:Configuration=Release",
+                "/p:Platform=x64",
+                "/p:TargetVersion=Windows10"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Build SnowSwordCore (Dispatch Recovery DLL)",
+            "type": "shell",
+            "command": "msbuild",
+            "args": [
+                "SnowSwordCore/SnowSwordCore.vcxproj",
+                "/p:Configuration=Release",
+                "/p:Platform=x64"
+            ],
+            "group": "build",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "Run Python Client (Test GUI)",
+            "type": "shell",
+            "command": "python",
+            "args": [
+                "ring3/client/myark_main.py"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+  "jobs": [
+    {
+      "name": "igdkmdn64.sys",
+      "base": "0xFFFFF80452F70000",
+      "size": "0x3413000",
+      "path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_715821f1c885b416\\igdkmdn64.sys",
+      "driver_object": "0xFFFF9A89A7D37E10",
+      "group": "dxgkrnl",
+      "sha256": "adae0bff060618aae1c351e1bcd5a7d55cec022cddcfca78603f62440f3a45b9",
+      "command": "dispatch-function list --path \"C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_715821f1c885b416\\igdkmdn64.sys\" --addr 0xFFFF9A89A7D37E10"
+    },
+    {
+      "name": "BasicRender.sys",
+      "base": "0xFFFFF80450FF0000",
+      "size": "0x13000",
+      "path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\basicrender.inf_amd64_505dbfb03b1f39fa\\BasicRender.sys",
+      "driver_object": "0xFFFF9A89A54CBC80",
+      "group": "dxgkrnl",
+      "sha256": "585fc4058c95abae8c5463cee65f87397dbfb6eae898e298c5dba7d67d62201d",
+      "command": "dispatch-function list --path \"C:\\Windows\\System32\\DriverStore\\FileRepository\\basicrender.inf_amd64_505dbfb03b1f39fa\\BasicRender.sys\" --addr 0xFFFF9A89A54CBC80"
+    },
+    {
+      "name": "IndirectKmd.sys",
+      "base": "0xFFFFF80459E60000",
+      "size": "0x17000",
+      "path": "C:\\Windows\\System32\\drivers\\IndirectKmd.sys",
+      "driver_object": "0xFFFF9A89A9F14E00",
+      "group": "dxgkrnl",
+      "sha256": "4cdbdd788e3ceb1ec621c61664adffa3b0ef1b055c60f285bb8d5541d8dea2a2",
+      "command": "dispatch-function list --path \"C:\\Windows\\System32\\drivers\\IndirectKmd.sys\" --addr 0xFFFF9A89A9F14E00"
+    },
+    {
+      "name": "npu_kmd.sys",
+      "base": "0xFFFFF80452710000",
+      "size": "0x3B9000",
+      "path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\npu.inf_amd64_c174cd41587112dd\\npu_kmd.sys",
+      "driver_object": "0xFFFF9A89A80A9A00",
+      "group": "dxgkrnl",
+      "sha256": "baf1dc541fbbda5a1d9812641b3f69f81aa8f913592ee5932782188c1109e4c0",
+      "command": "dispatch-function list --path \"C:\\Windows\\System32\\DriverStore\\FileRepository\\npu.inf_amd64_c174cd41587112dd\\npu_kmd.sys\" --addr 0xFFFF9A89A80A9A00"
+    },
+    {
+      "name": "BasicDisplay.sys",
+      "base": "0xFFFFF80450FD0000",
+      "size": "0x1A000",
+      "path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\basicdisplay.inf_amd64_2753efdbb0d9a226\\BasicDisplay.sys",
+      "driver_object": "0xFFFF9A89A54CDC80",
+      "group": "dxgkrnl",
+      "sha256": "df42b232d1620023195558443cb764f3192816a1cd97d5c637d5b52fbd409f7c",
+      "command": "dispatch-function list --path \"C:\\Windows\\System32\\DriverStore\\FileRepository\\basicdisplay.inf_amd64_2753efdbb0d9a226\\BasicDisplay.sys\" --addr 0xFFFF9A89A54CDC80"
+    }
+  ],
+  "missing": [],
+  "collected": "2026-10-03 18:29:07"
+}

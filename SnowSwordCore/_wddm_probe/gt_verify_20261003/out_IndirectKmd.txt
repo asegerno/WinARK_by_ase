@@ -1,0 +1,361 @@
+=== wddm_gt_verify ===
+driver      = C:\Windows\System32\drivers\IndirectKmd.sys (94208 bytes, preferredBase=0x1C0000000 imageSize=0x17000)
+dxgkrnl     = C:\Windows\System32\drivers\dxgkrnl.sys (5146032 bytes, runtimeBase=0xFFFFF8043C220000 imageSize=0x4E9000)
+live slots  = parsed 28 / 28
+DriverInit=0xFFFFF80459E73010 DriverStartIo=0x0 DriverUnload=0xFFFFF8043C452800
+[CORE] [ResolveRealDriverEntryRVA] [Debug] Begin ImageEntryRVA=0x13010
+[CORE] [ResolveRealDriverEntryRVA] [Debug] Depth=0 CurrentRVA=0x13010
+[CORE] [FindForwardedDriverEntryRVA] [Debug] Candidate#0 CallRVA=0x13020 TargetRVA=0x13044
+[CORE] [FindForwardedDriverEntryRVA] [Debug] Candidate#1 CallRVA=0x1302B TargetRVA=0x13078
+[CORE] [FindForwardedDriverEntryRVA] [Debug] Accept tail forwarding Candidate#1 CallRVA=0x1302B TargetRVA=0x13078
+[CORE] [ResolveRealDriverEntryRVA] [Debug] Depth=0 CurrentRVA=0x13010 NextRVA=0x13078
+[CORE] [ResolveRealDriverEntryRVA] [Debug] Depth=1 CurrentRVA=0x13078
+[CORE] [FindForwardedDriverEntryRVA] [Debug] Candidate#0 CallRVA=0x13095 TargetRVA=0x2B40
+[CORE] [FindForwardedDriverEntryRVA] [Debug] Candidate#1 CallRVA=0x1325F TargetRVA=0x381C
+[CORE] [FindForwardedDriverEntryRVA] [Debug] Accept tail forwarding Candidate#1 CallRVA=0x1325F TargetRVA=0x381C
+[CORE] [ResolveRealDriverEntryRVA] [Debug] Depth=1 CurrentRVA=0x13078 NextRVA=0x381C
+[CORE] [ResolveRealDriverEntryRVA] [Debug] Depth=2 CurrentRVA=0x381C
+[CORE] [ResolveRealDriverEntryRVA] [Debug] Depth=2 CurrentRVA=0x381C NextRVA=0x39C8
+[CORE] [ResolveRealDriverEntryRVA] [Debug] Depth=3 CurrentRVA=0x39C8
+[CORE] [FindForwardedDriverEntryRVA] [Debug] No forwarding candidates
+[CORE] [ResolveRealDriverEntryRVA] [Debug] Depth=3 CurrentRVA=0x39C8 NextRVA=0x0
+[CORE] [ResolveRealDriverEntryRVA] [Debug] No forwarding target, stop at RVA=0x39C8
+[CORE] [ResolveRealDriverEntryRVA] [Debug] Final RealDriverEntryRVA=0x39C8
+[CORE] [BuildDispatchCfg] [CFG-BUILD] Function=0x39C8 Bounds=0x381C..0x39DE Blocks=1 Instructions=8
+[CORE] [BuildDispatchCfg] [CFG-BLOCK] Start=0x39C8 End=0x39DD Instructions=8 Terminator=3 Successors=
+[CORE] [ScanDispatchFunction] [CFG-FUNCTION] Module= Depth=0 FunctionRVA=0x39C8 Bounds=0x381C..0x39DE
+[CORE] [ScanDispatchFunction] [DF-OUT] Block=0x39C8 Iteration=1
+[CORE] [ScanDispatchFunction] [DF-IN] Block=0x39C8 RAX=Unknown:0x0 RCX=DriverObject:0x0 RDX=Unknown:0x0 RBX=Unknown:0x0 R11=Unknown:0x0 RSI=Unknown RDI=Unknown
+[CORE] [ScanDispatchFunction] [CFG-FUNCTION-END] Module= FunctionRVA=0x39C8 Blocks=1 Iterations=1 HitCount=0
+[CORE] [RecoverDispatchFromDump] [Debug] No generic WDM MajorFunction initialization matched
+[CORE] [ScanWddmReachableFunction] [WDDM-SCAN] Depth=0 FunctionRVA=0x13010 ScanSize=0x2C
+[CORE] [ScanWddmReachableFunction] [WDDM-CALL] Caller=0x13010 Target=0x13044 DriverObject=true
+[CORE] [ScanWddmReachableFunction] [WDDM-SCAN] Depth=1 FunctionRVA=0x13044 ScanSize=0x2E
+[CORE] [ScanWddmReachableFunction] [WDDM-CALL] Caller=0x13010 Target=0x13078 DriverObject=true
+[CORE] [ScanWddmReachableFunction] [WDDM-SCAN] Depth=1 FunctionRVA=0x13078 ScanSize=0x209
+[CORE] [ScanWddmReachableFunction] [WDDM-CALL] Caller=0x13078 Target=0x2B40 DriverObject=true
+[CORE] [ScanWddmReachableFunction] [WDDM-SCAN] Depth=2 FunctionRVA=0x2B40 ScanSize=0x39
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x2B40 Reg=RDX TargetRVA=0x2A30
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0xDC50
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] KMDOD version candidate HelperRVA=0x13078 Version=0x11007 InsnRVA=0x130FE
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x21F0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2560
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0xDE90
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x1FA0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2130
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2160
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x1F40
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x1F10
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2040
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x29D0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0xDEE0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2230
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2620
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2650
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2440
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x24A0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2470
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2A20
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x29D0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2410
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x29E0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x29F0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2590
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2680
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x25F0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x26E0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x2710
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x26B0
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x13078 Reg=RAX TargetRVA=0x25C0
+[CORE] [ScanWddmReachableFunction] [WDDM-CALL] Caller=0x13078 Target=0x381C DriverObject=true
+[CORE] [ScanWddmReachableFunction] [WDDM-SCAN] Depth=2 FunctionRVA=0x381C ScanSize=0x1C2
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] ImageLocalFnPtr HelperRVA=0x381C Reg=RAX TargetRVA=0x12130
+[CORE] [ScanWddmReachableFunction] [WDDM-CALL] Caller=0x381C Target=0x3A30 DriverObject=true
+[CORE] [ScanWddmReachableFunction] [WDDM-SCAN] Depth=3 FunctionRVA=0x3A30 ScanSize=0x6
+[CORE] [ScanWddmReachableFunction] [WDDM-EVIDENCE] KMDOD initialization HelperRVA=0x13078 Version=0x11007 LocalCallbacks=30
+[CORE] [DetectWddmDriver] [WDDM-EVIDENCE] KMDOD initialization=true Version=0x11007 HelperRVA=0x13078 Callbacks=30
+[CORE] [DetectWddmDriver] [WDDM] CallbackTable run=12 TableStartRVA=0x8100
+[CORE] [DetectWddmDriver] [WDDM] Detected=1 Confidence=90 RegistrationConstant=0 IndirectRegistrationPath=0 CallbackRun=12 DxgkrnlImport=0 Reason=KMDOD(0x11007,30 callbacks)+CallbackTable(12)
+[CORE] [ClassifyDriverDispatchModel] [CLASSIFY] Module= Model=WDDM Confidence=90 Reason=KMDOD(0x11007,30 callbacks)+CallbackTable(12)
+[HOST] load-module dxgkrnl.sys size=0x4E85B0 imageBase=0xFFFFF8043C220000 imageSize=0x4E9000
+[CORE] [LoadDispatchModuleContextNamed] [WDDM-BASELINE] Loaded dxgkrnl.sys ImageBase=0xFFFFF8043C220000 ImageSize=0x4E9000 FileSize=0x4E85B0
+[HOST] load-module dxgkrnl.sys size=0x4E85B0 imageBase=0xFFFFF8043C220000 imageSize=0x4E9000
+[CORE] [LoadDispatchModuleContextNamed] [WDDM-BASELINE] Loaded dxgkrnl.sys ImageBase=0xFFFFF8043C220000 ImageSize=0x4E9000 FileSize=0x4E85B0
+[CORE] [ScanDxgkrnlRuntimeFunctionsForBaseline] [WDDM-BASELINE] RuntimeFunctionCount=8532
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=0 TargetRVA=0x3A3780 StoreRVA=0x703CB
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=1 TargetRVA=0x1B4C10 StoreRVA=0x703D6
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=2 TargetRVA=0x3C7290 StoreRVA=0x703E1
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=3 TargetRVA=0x3BBB70 StoreRVA=0x703EF
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=4 TargetRVA=0x3400C0 StoreRVA=0x703FD
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=5 TargetRVA=0x323E90 StoreRVA=0x7040B
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=6 TargetRVA=0x41B760 StoreRVA=0x70419
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=7 TargetRVA=0x36D700 StoreRVA=0x70427
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=8 TargetRVA=0x3B7DD0 StoreRVA=0x70435
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=9 TargetRVA=0x39CF90 StoreRVA=0x70443
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=10 TargetRVA=0x1B8960 StoreRVA=0x70451
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=11 TargetRVA=0x406FC0 StoreRVA=0x7045F
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=12 TargetRVA=0x2A0D50 StoreRVA=0x7046D
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=13 TargetRVA=0x3CEF60 StoreRVA=0x7047B
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=14 TargetRVA=0x307590 StoreRVA=0x70489
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=15 TargetRVA=0x1AEAA0 StoreRVA=0x70497
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=16 TargetRVA=0x1AF2C0 StoreRVA=0x704A5
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=17 TargetRVA=0x28B0C0 StoreRVA=0x704B3
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=18 TargetRVA=0x28F200 StoreRVA=0x704C1
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=19 TargetRVA=0x3323F0 StoreRVA=0x704CF
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=20 TargetRVA=0x3FC7C0 StoreRVA=0x704DD
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=21 TargetRVA=0x291630 StoreRVA=0x704EB
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=22 TargetRVA=0x3450E0 StoreRVA=0x704F9
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=23 TargetRVA=0x357C10 StoreRVA=0x70507
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=24 TargetRVA=0x1DC240 StoreRVA=0x70515
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=25 TargetRVA=0x30A1D0 StoreRVA=0x70523
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=26 TargetRVA=0x198040 StoreRVA=0x70531
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x70270 Base=RDI Slot=27 TargetRVA=0x1DC950 StoreRVA=0x7053F
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x70270 Base=RDI Valid=28 Exact=0 Conflict=28 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=6 TargetRVA=0x1894A0 StoreRVA=0x91BDA
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=8 TargetRVA=0x1894A0 StoreRVA=0x91C27
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=9 TargetRVA=0x1894A0 StoreRVA=0x91C57
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=10 TargetRVA=0x1894A0 StoreRVA=0x91C87
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=13 TargetRVA=0x1894A0 StoreRVA=0x91CF1
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=14 TargetRVA=0x1894A0 StoreRVA=0x91D21
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=16 TargetRVA=0x1894A0 StoreRVA=0x91D6E
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=17 TargetRVA=0x1894A0 StoreRVA=0x91D9E
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=18 TargetRVA=0x1894A0 StoreRVA=0x91DCE
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=22 TargetRVA=0x1894A0 StoreRVA=0x91E55
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=23 TargetRVA=0x1894A0 StoreRVA=0x91E85
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x91924 Base=RBX Slot=26 TargetRVA=0x1894A0 StoreRVA=0x91EEF
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x91924 Base=RBX Valid=12 Exact=0 Conflict=12 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x93C4C Base=RCX Slot=0 TargetRVA=0x93F30 StoreRVA=0x93D02
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x93C4C Base=RCX Slot=1 TargetRVA=0x93DE0 StoreRVA=0x93D0D
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x93C4C Base=RCX Slot=2 TargetRVA=0x93FA0 StoreRVA=0x93D18
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x93C4C Base=RCX Slot=3 TargetRVA=0x94050 StoreRVA=0x93D26
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x93C4C Base=RCX Slot=4 TargetRVA=0x109D0 StoreRVA=0x93D34
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x93C4C Base=RCX Slot=5 TargetRVA=0x94090 StoreRVA=0x93D50
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x93C4C Base=RCX Valid=6 Exact=0 Conflict=6 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x198854 Base=RCX Slot=26 TargetRVA=0x19BFF0 StoreRVA=0x198AE0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x198854 Base=RCX Slot=27 TargetRVA=0x19BFB0 StoreRVA=0x198AEE
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x198854 Base=RCX Valid=2 Exact=0 Conflict=2 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x2300A0 Base=RBX Slot=24 TargetRVA=0x237E50 StoreRVA=0x230AF1
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x2300A0 Base=RBX Slot=22 TargetRVA=0x2382A0 StoreRVA=0x230C44
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x2300A0 Base=RBX Slot=26 TargetRVA=0x238BE0 StoreRVA=0x230C80
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x2300A0 Base=RBX Slot=2 TargetRVA=0x2364A0 StoreRVA=0x231DBF
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x2300A0 Base=R14 Slot=3 TargetRVA=0x3C3C10 StoreRVA=0x231DD2
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x2300A0 Base=RBX Valid=4 Exact=0 Conflict=4 Hooked=0
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x2300A0 Base=R14 Valid=1 Exact=0 Conflict=1 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x232818 Base=RSI Slot=0 TargetRVA=0x38C780 StoreRVA=0x232E36
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x232818 Base=RSI Slot=27 TargetRVA=0x3AEED0 StoreRVA=0x232E48
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x232818 Base=RSI Slot=22 TargetRVA=0x399820 StoreRVA=0x232E56
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x232818 Base=RSI Slot=14 TargetRVA=0x3927F0 StoreRVA=0x232E64
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x232818 Base=RSI Slot=15 TargetRVA=0x39B470 StoreRVA=0x232E72
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x232818 Base=RSI Slot=23 TargetRVA=0x2325F0 StoreRVA=0x232E80
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x232818 Base=RSI Slot=2 TargetRVA=0x37C460 StoreRVA=0x232E8E
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x232818 Base=RSI Slot=18 TargetRVA=0x37C460 StoreRVA=0x232E95
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] Writer=0x232818 Base=RSI Hits=8 Exact=8 Conflict=0 Hooked=0 Match=8 Missing=20 Extra=0 Score=8160
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23969C Base=RBX Slot=0 TargetRVA=0x2343D0 StoreRVA=0x239703
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23969C Base=RBX Slot=4 TargetRVA=0x237250 StoreRVA=0x239717
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23969C Base=RBX Slot=1 TargetRVA=0x2346F0 StoreRVA=0x23A6F8
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x23969C Base=RBX Valid=3 Exact=0 Conflict=3 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=0 TargetRVA=0x1B7A10 StoreRVA=0x23C194
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=1 TargetRVA=0x1B7800 StoreRVA=0x23C19F
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=2 TargetRVA=0x31F40 StoreRVA=0x23C1AA
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=3 TargetRVA=0x2FF10 StoreRVA=0x23C1B8
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=4 TargetRVA=0x38D080 StoreRVA=0x23C1C6
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=5 TargetRVA=0x3A5E20 StoreRVA=0x23C1D4
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=6 TargetRVA=0x3FDE90 StoreRVA=0x23C1E2
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=7 TargetRVA=0x71360 StoreRVA=0x23C1F0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=8 TargetRVA=0x22B870 StoreRVA=0x23C1FE
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=9 TargetRVA=0x3ACF00 StoreRVA=0x23C20C
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=10 TargetRVA=0x3B9CB0 StoreRVA=0x23C21A
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=11 TargetRVA=0x3C98B0 StoreRVA=0x23C228
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=12 TargetRVA=0x17720 StoreRVA=0x23C236
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=14 TargetRVA=0x6D720 StoreRVA=0x23C244
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=15 TargetRVA=0x6D870 StoreRVA=0x23C252
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=16 TargetRVA=0x6D8E0 StoreRVA=0x23C260
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=17 TargetRVA=0x6D400 StoreRVA=0x23C26E
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=18 TargetRVA=0x6D470 StoreRVA=0x23C27C
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=13 TargetRVA=0x22B830 StoreRVA=0x23C28A
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=19 TargetRVA=0x3C6DD0 StoreRVA=0x23C298
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=20 TargetRVA=0x1B4D10 StoreRVA=0x23C2A6
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=21 TargetRVA=0x3DCCA0 StoreRVA=0x23C2B4
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=22 TargetRVA=0x33BA10 StoreRVA=0x23C2C2
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=23 TargetRVA=0x34C6C0 StoreRVA=0x23C2D0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=24 TargetRVA=0x6D4F0 StoreRVA=0x23C2DE
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=25 TargetRVA=0x17540 StoreRVA=0x23C2EC
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=26 TargetRVA=0x6D6C0 StoreRVA=0x23C2FA
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x23BA58 Base=RBX Slot=27 TargetRVA=0x6D560 StoreRVA=0x23C36F
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x23BA58 Base=RBX Valid=28 Exact=0 Conflict=28 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x258A90 Base=RBX Slot=0 TargetRVA=0x400040 StoreRVA=0x258B57
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x258A90 Base=RBX Slot=1 TargetRVA=0x3DFB30 StoreRVA=0x258B62
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x258A90 Base=RBX Slot=2 TargetRVA=0x3D5730 StoreRVA=0x258B6D
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x258A90 Base=RBX Valid=3 Exact=0 Conflict=3 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x2A2108 Base=RDI Slot=9 TargetRVA=0x190750 StoreRVA=0x2A21DD
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x2A2108 Base=RDI Valid=1 Exact=0 Conflict=1 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=0 TargetRVA=0x1AFA70 StoreRVA=0x3A7E38
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=1 TargetRVA=0x1B0220 StoreRVA=0x3A7E51
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=3 TargetRVA=0x286850 StoreRVA=0x3A7E5C
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=2 TargetRVA=0x2C7900 StoreRVA=0x3A7E6A
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=4 TargetRVA=0x3D7DE0 StoreRVA=0x3A7E78
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=5 TargetRVA=0x32C5F0 StoreRVA=0x3A7E86
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=6 TargetRVA=0x3F32A0 StoreRVA=0x3A7E94
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=7 TargetRVA=0x40FC50 StoreRVA=0x3A7EA2
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=8 TargetRVA=0x3357F0 StoreRVA=0x3A7EB0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=9 TargetRVA=0x371240 StoreRVA=0x3A7EBE
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=10 TargetRVA=0x3C4D90 StoreRVA=0x3A7ECC
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=11 TargetRVA=0x38F5D0 StoreRVA=0x3A7EDA
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=12 TargetRVA=0x30E6A0 StoreRVA=0x3A7EE8
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=13 TargetRVA=0x3BAD00 StoreRVA=0x3A7EF6
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=14 TargetRVA=0x38DF00 StoreRVA=0x3A7F04
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=16 TargetRVA=0x356960 StoreRVA=0x3A7F12
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=15 TargetRVA=0x3F3E10 StoreRVA=0x3A7F20
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=17 TargetRVA=0x36FEF0 StoreRVA=0x3A7F2E
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=18 TargetRVA=0x3D6890 StoreRVA=0x3A7F3C
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=19 TargetRVA=0x3E6230 StoreRVA=0x3A7F4A
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=20 TargetRVA=0x3D9E50 StoreRVA=0x3A7F58
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=21 TargetRVA=0x3F8A90 StoreRVA=0x3A7F66
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=22 TargetRVA=0x367410 StoreRVA=0x3A7F74
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=23 TargetRVA=0x3F8780 StoreRVA=0x3A7F82
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=24 TargetRVA=0x3F49C0 StoreRVA=0x3A7F90
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=25 TargetRVA=0x379E60 StoreRVA=0x3A7FA9
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=26 TargetRVA=0x3400A0 StoreRVA=0x3A7FB7
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A7CDC Base=RBX Slot=27 TargetRVA=0x2A4D80 StoreRVA=0x3A7FC5
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x3A7CDC Base=RBX Valid=28 Exact=0 Conflict=28 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=0 TargetRVA=0x3F1B10 StoreRVA=0x3A82FF
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=1 TargetRVA=0x1E7600 StoreRVA=0x3A830A
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=2 TargetRVA=0x3C8340 StoreRVA=0x3A8315
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=4 TargetRVA=0x3678C0 StoreRVA=0x3A8323
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=5 TargetRVA=0x418BA0 StoreRVA=0x3A8331
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=6 TargetRVA=0x31F840 StoreRVA=0x3A833F
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=7 TargetRVA=0x3EF410 StoreRVA=0x3A834D
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=8 TargetRVA=0x35F640 StoreRVA=0x3A835B
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=9 TargetRVA=0x3BA500 StoreRVA=0x3A8377
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=10 TargetRVA=0x1C36F0 StoreRVA=0x3A8385
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=3 TargetRVA=0x3E58B0 StoreRVA=0x3A83A1
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=11 TargetRVA=0x3FF190 StoreRVA=0x3A83AF
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=12 TargetRVA=0x364B60 StoreRVA=0x3A83BD
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=13 TargetRVA=0x292020 StoreRVA=0x3A83CB
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=14 TargetRVA=0x1C0190 StoreRVA=0x3A83D9
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=15 TargetRVA=0x404A70 StoreRVA=0x3A83E7
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=16 TargetRVA=0x418040 StoreRVA=0x3A83F5
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=17 TargetRVA=0x27EC00 StoreRVA=0x3A8403
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=18 TargetRVA=0x416060 StoreRVA=0x3A8411
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=19 TargetRVA=0x417550 StoreRVA=0x3A841F
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=20 TargetRVA=0x3FBE50 StoreRVA=0x3A842D
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=21 TargetRVA=0x369C80 StoreRVA=0x3A843B
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=22 TargetRVA=0x1AA390 StoreRVA=0x3A8449
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=23 TargetRVA=0x369E20 StoreRVA=0x3A8457
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=24 TargetRVA=0x367410 StoreRVA=0x3A8465
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=25 TargetRVA=0x2F13B0 StoreRVA=0x3A8473
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=26 TargetRVA=0x2BD800 StoreRVA=0x3A8481
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3A8240 Base=RCX Slot=27 TargetRVA=0x2BEB80 StoreRVA=0x3A848F
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x3A8240 Base=RCX Valid=28 Exact=0 Conflict=28 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3BC358 Base=RDI Slot=0 TargetRVA=0x426E30 StoreRVA=0x3BC80D
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3BC358 Base=RDI Slot=2 TargetRVA=0x2BA510 StoreRVA=0x3BC818
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3BC358 Base=RDI Slot=3 TargetRVA=0x50F10 StoreRVA=0x3BC826
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3BC358 Base=RDI Slot=1 TargetRVA=0x427910 StoreRVA=0x3BC834
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3BC358 Base=RDI Slot=22 TargetRVA=0x24B5E0 StoreRVA=0x3BC83F
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3BC358 Base=RDI Slot=26 TargetRVA=0x24B6F0 StoreRVA=0x3BC84D
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x3BC358 Base=RDI Valid=6 Exact=0 Conflict=6 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3F68BC Base=RDI Slot=0 TargetRVA=0x427D60 StoreRVA=0x3F6ACA
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x3F68BC Base=RDI Slot=1 TargetRVA=0x24C2B0 StoreRVA=0x3F6AD5
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x3F68BC Base=RDI Valid=2 Exact=0 Conflict=2 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x403514 Base=RDI Slot=1 TargetRVA=0x2346F0 StoreRVA=0x403B0E
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x403514 Base=RDI Valid=1 Exact=0 Conflict=1 Hooked=0
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x42E078 Base=R13 Slot=0 TargetRVA=0x3CAD00 StoreRVA=0x42E4F7
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x42E078 Base=R13 Slot=2 TargetRVA=0x3CAD00 StoreRVA=0x42E502
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x42E078 Base=R13 Slot=14 TargetRVA=0x70940 StoreRVA=0x42E515
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x42E078 Base=R13 Slot=15 TargetRVA=0x3A74C0 StoreRVA=0x42E523
+[CORE] [ScanDxgkrnlBaselineFunction] [WDDM-BASELINE-CANDIDATE] Writer=0x42E078 Base=R13 Slot=16 TargetRVA=0x1C4E10 StoreRVA=0x42E531
+[CORE] [ScoreWddmBaselineCandidate] [WDDM-BASELINE-SCORE] REJECT(NoExactMatch) Writer=0x42E078 Base=R13 Valid=5 Exact=0 Conflict=5 Hooked=0
+[CORE] [ScanDxgkrnlRuntimeFunctionsForBaseline] [WDDM-BASELINE] Best structural candidate Writer=0x232818 Base=RSI Hits=8 Match=8 Missing=20 Extra=0 Score=8160
+[CORE] [RecoverDxgkrnlDispatchBaseline] [WDDM-BASELINE] 0 RVA=0x38C780 VA=0xFFFFF8043C5AC780
+[CORE] [RecoverDxgkrnlDispatchBaseline] [WDDM-BASELINE] 2 RVA=0x37C460 VA=0xFFFFF8043C59C460
+[CORE] [RecoverDxgkrnlDispatchBaseline] [WDDM-BASELINE] 14 RVA=0x3927F0 VA=0xFFFFF8043C5B27F0
+[CORE] [RecoverDxgkrnlDispatchBaseline] [WDDM-BASELINE] 15 RVA=0x39B470 VA=0xFFFFF8043C5BB470
+[CORE] [RecoverDxgkrnlDispatchBaseline] [WDDM-BASELINE] 18 RVA=0x37C460 VA=0xFFFFF8043C59C460
+[CORE] [RecoverDxgkrnlDispatchBaseline] [WDDM-BASELINE] 22 RVA=0x399820 VA=0xFFFFF8043C5B9820
+[CORE] [RecoverDxgkrnlDispatchBaseline] [WDDM-BASELINE] 23 RVA=0x2325F0 VA=0xFFFFF8043C4525F0
+[CORE] [RecoverDxgkrnlDispatchBaseline] [WDDM-BASELINE] 27 RVA=0x3AEED0 VA=0xFFFFF8043C5CEED0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 1 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 3 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 4 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 5 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 6 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 7 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 8 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 9 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 10 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 11 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 12 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 13 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 16 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 17 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 19 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 20 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 21 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 24 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 25 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] 26 UniformDefault RVA=0x7CDC0 VA=0xFFFFF8043C29CDC0
+[CORE] [ApplyWddmUniformDefault] [WDDM-BASELINE] Uniform default accepted RVA=0x7CDC0 Distinct=1 Filled=20
+[CORE] [RecoverDxgkrnlDispatchBaseline] [WDDM-BASELINE] Structural baseline accepted WriterRVA=0x232818 Base=RSI Hits=8 Exact=8 Confidence=95
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] hits=8 exact=8 conflict=0 confidence=95 dxgBase=0xFFFFF8043C220000 dxgImageSize=0x4E9000 writerRva=0x232818 baseReg=6 tracked=0 runtimeFns=8532 uniformDefault=1 defaultRva=0x7CDC0 defaultSlots=20
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[0] rva=0x38C780 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=5 confidence=95
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[1] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[2] rva=0x37C460 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=5 confidence=95
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[3] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[4] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[5] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[6] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[7] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[8] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[9] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[10] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[11] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[12] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[13] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[14] rva=0x3927F0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=5 confidence=95
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[15] rva=0x39B470 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=5 confidence=95
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[16] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[17] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[18] rva=0x37C460 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=5 confidence=95
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[19] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[20] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[21] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[22] rva=0x399820 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=5 confidence=95
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[23] rva=0x2325F0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=5 confidence=95
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[24] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[25] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[26] rva=0x7CDC0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=7 confidence=85
+[CORE] [WddmDebugDumpBaseline] [WDDM-DUMP] slot[27] rva=0x3AEED0 moduleBase=0xFFFFF8043C220000 state=1 owner=2 source=5 confidence=95
+[CORE] [FinalizeDispatchRecovery] [FINALIZE] Model=3 FrameworkKind=0 Recovered=28 FrameworkBaseline=8 FrameworkOwned=0 Default=0 Unresolved=0 ModelConfidence=90
+STATUS=1
+MODEL modelKind=3 frameworkKind=0 modelConfidence=90 hitCount=28 confidence=100 fastIo=0x0 slots=28
+=== SLOT TABLE (state: 1=Recovered 2=FrameworkOwned 3=Default 0=Unresolved;
+    owner: 1=Driver 2=Framework 3=KernelDefault; src: 5=FrameworkBaseline 4=FrameworkClassify) ===
+SLOT[ 0] IRP_MJ_CREATE                      valid=1 state=1 owner=2 src=5 conf=95 moduleBase=0xFFFFF8043C220000 rva=0x38C780 current=0xFFFFF8043C5AC780
+SLOT[ 1] IRP_MJ_CREATE_NAMED_PIPE           valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[ 2] IRP_MJ_CLOSE                       valid=1 state=1 owner=2 src=5 conf=95 moduleBase=0xFFFFF8043C220000 rva=0x37C460 current=0xFFFFF8043C59C460
+SLOT[ 3] IRP_MJ_READ                        valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[ 4] IRP_MJ_WRITE                       valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[ 5] IRP_MJ_QUERY_INFORMATION           valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[ 6] IRP_MJ_SET_INFORMATION             valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[ 7] IRP_MJ_QUERY_EA                    valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[ 8] IRP_MJ_SET_EA                      valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[ 9] IRP_MJ_FLUSH_BUFFERS               valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[10] IRP_MJ_QUERY_VOLUME_INFORMATION    valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[11] IRP_MJ_SET_VOLUME_INFORMATION      valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[12] IRP_MJ_DIRECTORY_CONTROL           valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[13] IRP_MJ_FILE_SYSTEM_CONTROL         valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[14] IRP_MJ_DEVICE_CONTROL              valid=1 state=1 owner=2 src=5 conf=95 moduleBase=0xFFFFF8043C220000 rva=0x3927F0 current=0xFFFFF8043C5B27F0
+SLOT[15] IRP_MJ_INTERNAL_DEVICE_CONTROL     valid=1 state=1 owner=2 src=5 conf=95 moduleBase=0xFFFFF8043C220000 rva=0x39B470 current=0xFFFFF8043C5BB470
+SLOT[16] IRP_MJ_SHUTDOWN                    valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[17] IRP_MJ_LOCK_CONTROL                valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[18] IRP_MJ_CLEANUP                     valid=1 state=1 owner=2 src=5 conf=95 moduleBase=0xFFFFF8043C220000 rva=0x37C460 current=0xFFFFF8043C59C460
+SLOT[19] IRP_MJ_CREATE_MAILSLOT             valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[20] IRP_MJ_QUERY_SECURITY              valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[21] IRP_MJ_SET_SECURITY                valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[22] IRP_MJ_POWER                       valid=1 state=1 owner=2 src=5 conf=95 moduleBase=0xFFFFF8043C220000 rva=0x399820 current=0xFFFFF8043C5B9820
+SLOT[23] IRP_MJ_SYSTEM_CONTROL              valid=1 state=1 owner=2 src=5 conf=95 moduleBase=0xFFFFF8043C220000 rva=0x2325F0 current=0xFFFFF8043C4525F0
+SLOT[24] IRP_MJ_DEVICE_CHANGE               valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[25] IRP_MJ_QUERY_QUOTA                 valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[26] IRP_MJ_SET_QUOTA                   valid=1 state=1 owner=2 src=7 conf=85 moduleBase=0xFFFFF8043C220000 rva=0x7CDC0 current=0xFFFFF8043C29CDC0
+SLOT[27] IRP_MJ_PNP                         valid=1 state=1 owner=2 src=5 conf=95 moduleBase=0xFFFFF8043C220000 rva=0x3AEED0 current=0xFFFFF8043C5CEED0
+SUMMARY recovered=28 frameworkOwned=0 default=0 unresolved=0

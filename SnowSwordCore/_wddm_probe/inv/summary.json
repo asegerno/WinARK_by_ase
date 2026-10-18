@@ -1,0 +1,107 @@
+[
+  {
+    "name": "igdkmdn64.sys",
+    "group": "dxgkrnl",
+    "rc": 0,
+    "rows": 32,
+    "resolved": 29,
+    "probe_bytes": 80847,
+    "merge_lines": 8,
+    "markers": [
+      "APPLY",
+      "CLASSIFY",
+      "LOAD",
+      "MERGE",
+      "WDDM-BASELINE",
+      "WDDM-BASELINE-CANDIDATE",
+      "WDDM-BASELINE-SCORE",
+      "WDDM-EVIDENCE"
+    ],
+    "addr": "0xFFFF9A89A7D37E10",
+    "path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\iigd_dch.inf_amd64_715821f1c885b416\\igdkmdn64.sys"
+  },
+  {
+    "name": "BasicRender.sys",
+    "group": "dxgkrnl",
+    "rc": 0,
+    "rows": 32,
+    "resolved": 29,
+    "probe_bytes": 53441,
+    "merge_lines": 8,
+    "markers": [
+      "APPLY",
+      "CLASSIFY",
+      "LOAD",
+      "MERGE",
+      "WDDM-BASELINE",
+      "WDDM-BASELINE-CANDIDATE",
+      "WDDM-BASELINE-SCORE",
+      "WDDM-EVIDENCE"
+    ],
+    "addr": "0xFFFF9A89A54CBC80",
+    "path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\basicrender.inf_amd64_505dbfb03b1f39fa\\BasicRender.sys"
+  },
+  {
+    "name": "IndirectKmd.sys",
+    "group": "dxgkrnl",
+    "rc": 0,
+    "rows": 32,
+    "resolved": 29,
+    "probe_bytes": 59626,
+    "merge_lines": 28,
+    "markers": [
+      "APPLY",
+      "CLASSIFY",
+      "LOAD",
+      "MERGE",
+      "WDDM-BASELINE",
+      "WDDM-BASELINE-CANDIDATE",
+      "WDDM-BASELINE-SCORE",
+      "WDDM-EVIDENCE"
+    ],
+    "addr": "0xFFFF9A89A9F14E00",
+    "path": "C:\\Windows\\System32\\drivers\\IndirectKmd.sys"
+  },
+  {
+    "name": "npu_kmd.sys",
+    "group": "dxgkrnl",
+    "rc": 0,
+    "rows": 32,
+    "resolved": 29,
+    "probe_bytes": 57189,
+    "merge_lines": 8,
+    "markers": [
+      "APPLY",
+      "CLASSIFY",
+      "LOAD",
+      "MERGE",
+      "WDDM-BASELINE",
+      "WDDM-BASELINE-CANDIDATE",
+      "WDDM-BASELINE-SCORE",
+      "WDDM-EVIDENCE"
+    ],
+    "addr": "0xFFFF9A89A80A9A00",
+    "path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\npu.inf_amd64_c174cd41587112dd\\npu_kmd.sys"
+  },
+  {
+    "name": "BasicDisplay.sys",
+    "group": "dxgkrnl",
+    "rc": 0,
+    "rows": 32,
+    "resolved": 29,
+    "probe_bytes": 50436,
+    "merge_lines": 8,
+    "markers": [
+      "APPLY",
+      "CLASSIFY",
+      "LOAD",
+      "MERGE",
+      "WDDM-BASELINE",
+      "WDDM-BASELINE-CANDIDATE",
+      "WDDM-BASELINE-SCORE",
+      "WDDM-EVIDENCE"
+    ],
+    "addr": "0xFFFF9A89A54CDC80",
+    "path": "C:\\Windows\\System32\\DriverStore\\FileRepository\\basicdisplay.inf_amd64_2753efdbb0d9a226\\BasicDisplay.sys"
+  }
+]

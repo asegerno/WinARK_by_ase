@@ -1,0 +1,99 @@
+WDDM ground truth (5 sample log(s))
+==============================================================================
+
+BasicDisplay
+  model=WDDM confidence=100 reason=RegValue 0x230043+IndirectRegistrationPath+KMDOD(0x11007,28 callbacks)+CallbackTable(
+  dxgkrnl: base=0xFFFFF8043C220000 size=0x4E85
+  runtime functions scanned=85 no_candidate=False candidate_rejected_hits=None
+  score rejects=['REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'Writer=0x232818', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)']
+  BASELINE SLOTS (8):
+    IRP_MJ_CREATE                      rva=  0x38C780  va=0xFFFFF8043C5AC7
+    IRP_MJ_CLOSE                       rva=  0x37C460  va=0xFFFFF8043C59C4
+    IRP_MJ_DEVICE_CONTROL              rva=  0x3927F0  va=0xFFFFF8043C5B27
+    IRP_MJ_INTERNAL_DEVICE_CONTROL     rva=  0x39B470  va=0xFFFFF8043C5BB4
+    IRP_MJ_CLEANUP                     rva=  0x37C460  va=0xFFFFF8043C59C4
+    IRP_MJ_POWER                       rva=  0x399820  va=0xFFFFF8043C5B98
+    IRP_MJ_SYSTEM_CONTROL              rva=  0x2325F0  va=0xFFFFF8043C4525
+    IRP_MJ_PNP                         rva=  0x3AEED0  va=0xFFFFF8043C5CEE
+
+BasicRender
+  model=WDDM confidence=80 reason=RegValue 0x23003F+IndirectRegistrationPath+CallbackTable(1
+  dxgkrnl: base=0xFFFFF8043C220000 size=0x4E85
+  runtime functions scanned=85 no_candidate=False candidate_rejected_hits=None
+  score rejects=['REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'Writer=0x232818', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)']
+  BASELINE SLOTS (8):
+    IRP_MJ_CREATE                      rva=  0x38C780  va=0xFFFFF8043C5AC7
+    IRP_MJ_CLOSE                       rva=  0x37C460  va=0xFFFFF8043C59C4
+    IRP_MJ_DEVICE_CONTROL              rva=  0x3927F0  va=0xFFFFF8043C5B27
+    IRP_MJ_INTERNAL_DEVICE_CONTROL     rva=  0x39B470  va=0xFFFFF8043C5BB4
+    IRP_MJ_CLEANUP                     rva=  0x37C460  va=0xFFFFF8043C59C4
+    IRP_MJ_POWER                       rva=  0x399820  va=0xFFFFF8043C5B98
+    IRP_MJ_SYSTEM_CONTROL              rva=  0x2325F0  va=0xFFFFF8043C4525
+    IRP_MJ_PNP                         rva=  0x3AEED0  va=0xFFFFF8043C5CEE
+
+igdkmdn64
+  model=WDDM confidence=100 reason=RegValue 0x23003F+RegValue 0x230043+IndirectRegistrationPath+KMDOD(0x10004,155 callbacks)+CallbackTable(34
+  dxgkrnl: base=0xFFFFF8043C220000 size=0x4E85
+  runtime functions scanned=85 no_candidate=False candidate_rejected_hits=None
+  score rejects=['REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'Writer=0x232818', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)']
+  BASELINE SLOTS (8):
+    IRP_MJ_CREATE                      rva=  0x38C780  va=0xFFFFF8043C5AC7
+    IRP_MJ_CLOSE                       rva=  0x37C460  va=0xFFFFF8043C59C4
+    IRP_MJ_DEVICE_CONTROL              rva=  0x3927F0  va=0xFFFFF8043C5B27
+    IRP_MJ_INTERNAL_DEVICE_CONTROL     rva=  0x39B470  va=0xFFFFF8043C5BB4
+    IRP_MJ_CLEANUP                     rva=  0x37C460  va=0xFFFFF8043C59C4
+    IRP_MJ_POWER                       rva=  0x399820  va=0xFFFFF8043C5B98
+    IRP_MJ_SYSTEM_CONTROL              rva=  0x2325F0  va=0xFFFFF8043C4525
+    IRP_MJ_PNP                         rva=  0x3AEED0  va=0xFFFFF8043C5CEE
+
+IndirectKmd
+  model=WDDM confidence=90 reason=KMDOD(0x11007,30 callbacks)+CallbackTable(1
+  dxgkrnl: base=0xFFFFF8043C220000 size=0x4E85
+  runtime functions scanned=85 no_candidate=False candidate_rejected_hits=None
+  score rejects=['REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'Writer=0x232818', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)']
+  BASELINE SLOTS (28):
+    IRP_MJ_CREATE                      rva=  0x38C780  va=0xFFFFF8043C5AC7
+    IRP_MJ_CREATE_NAMED_PIPE           rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_CLOSE                       rva=  0x37C460  va=0xFFFFF8043C59C4
+    IRP_MJ_READ                        rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_WRITE                       rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_QUERY_INFORMATION           rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_SET_INFORMATION             rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_QUERY_EA                    rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_SET_EA                      rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_FLUSH_BUFFERS               rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_QUERY_VOLUME_INFORMATION    rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_SET_VOLUME_INFORMATION      rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_DIRECTORY_CONTROL           rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_FILE_SYSTEM_CONTROL         rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_DEVICE_CONTROL              rva=  0x3927F0  va=0xFFFFF8043C5B27
+    IRP_MJ_INTERNAL_DEVICE_CONTROL     rva=  0x39B470  va=0xFFFFF8043C5BB4
+    IRP_MJ_SHUTDOWN                    rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_LOCK_CONTROL                rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_CLEANUP                     rva=  0x37C460  va=0xFFFFF8043C59C4
+    IRP_MJ_CREATE_MAILSLOT             rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_QUERY_SECURITY              rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_SET_SECURITY                rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_POWER                       rva=  0x399820  va=0xFFFFF8043C5B98
+    IRP_MJ_SYSTEM_CONTROL              rva=  0x2325F0  va=0xFFFFF8043C4525
+    IRP_MJ_DEVICE_CHANGE               rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_QUERY_QUOTA                 rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_SET_QUOTA                   rva=   0x7CDC0  va=0xFFFFF8043C29CD
+    IRP_MJ_PNP                         rva=  0x3AEED0  va=0xFFFFF8043C5CEE
+
+npu_kmd
+  model=WDDM confidence=100 reason=RegValue 0x23003F+IndirectRegistrationPath+KMDOD(0x11008,83 callbacks)+CallbackTable(5
+  dxgkrnl: base=0xFFFFF8043C220000 size=0x4E85
+  runtime functions scanned=85 no_candidate=False candidate_rejected_hits=None
+  score rejects=['REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'Writer=0x232818', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)', 'REJECT(NoExactMatch)']
+  BASELINE SLOTS (8):
+    IRP_MJ_CREATE                      rva=  0x38C780  va=0xFFFFF8043C5AC7
+    IRP_MJ_CLOSE                       rva=  0x37C460  va=0xFFFFF8043C59C4
+    IRP_MJ_DEVICE_CONTROL              rva=  0x3927F0  va=0xFFFFF8043C5B27
+    IRP_MJ_INTERNAL_DEVICE_CONTROL     rva=  0x39B470  va=0xFFFFF8043C5BB4
+    IRP_MJ_CLEANUP                     rva=  0x37C460  va=0xFFFFF8043C59C4
+    IRP_MJ_POWER                       rva=  0x399820  va=0xFFFFF8043C5B98
+    IRP_MJ_SYSTEM_CONTROL              rva=  0x2325F0  va=0xFFFFF8043C4525
+    IRP_MJ_PNP                         rva=  0x3AEED0  va=0xFFFFF8043C5CEE
+
+TOTAL baseline slots across samples: 60

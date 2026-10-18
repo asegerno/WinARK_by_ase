@@ -1,0 +1,31 @@
+# Visual Studio / MSBuild files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+Debug/
+Release/
+x64/
+x86/
+bin/
+obj/
+
+# Build outputs
+*.sys
+*.cer
+*.pfx
+*.exp
+*.lib
+*.pdb
+*.ilk
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# Temp
+*.tmp
+*.bak

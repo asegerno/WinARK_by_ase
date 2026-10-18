@@ -1,0 +1,35 @@
+# _wddm_probe 是 Phase 2 的验证工作区：只提交「可审计的文本」（脚本、真值、报告），
+# 不提交二进制与中间产物。用「先全排除、再逐个放行」的白名单写法，避免漏网。
+#
+# 背景：本目录下混有一批与 Phase 2 无关的旧产物（cli_build/、fbtest/ 等），
+# 它们是前序会话留下的本机工作目录，合计 ~41MB，不应进仓库。
+
+* 
+
+# ---- 放行：Phase 2 验证脚本与文档 ----
+!.gitignore
+!*.py
+!*.md
+!*.bat
+!*.c
+
+# ---- 放行：WDDM 地面真值（VB 侧实测，Phase 2 的核心 oracle）----
+!inv/
+!inv/gt.json
+!inv/gt.txt
+!inv/summary.json
+!inv/manifest.json
+!inv/*.cli.txt
+
+# ---- 放行：Core 侧真值验证结果 ----
+!gt_verify_20261003/
+!gt_verify_20261003/gt_compare_report.txt
+!gt_verify_20261003/*.c
+!gt_verify_20261003/*.py
+!gt_verify_20261003/*.bat
+
+# ---- 放行：Core 侧真值验证的原始输出（逐槽证据，文本）----
+!gt_verify_20261003/out_*.txt
+
+# 一次性清理工具（用后即弃，不进仓库）
+_phase2*.py

@@ -1,0 +1,43 @@
+[InitDriver] LoadDriver OK
+[InitDriver] OpenDrv OK
+[InitDriver] OpenSymbolDevice OK
+[InitDriver] SUCCESS
+===SNOWSWORD_CUI_START===
+MODULE:33
+ROWCOUNT:32
+COLUMNS:名称|当前地址|所属模块|原始地址|所属模块
+DATA_START
+DriverInit|0xFFFFF80450FE6010|C:\Windows\System32\DriverStore\FileRepository\basicdisplay.inf_amd64_2753efdbb0d9a226\BasicDisplay.sys|-|无
+DriverStartIo|0x0|-|-|无
+DriverUnload|0xFFFFF8043C452800|C:\Windows\System32\drivers\dxgkrnl.sys|-|无
+IRP_MJ_CREATE|0xFFFFF8043C5AC780|C:\Windows\System32\drivers\dxgkrnl.sys|0xFFFFF8043C5AC780|C:\Windows\System32\drivers\dxgkrnl.sys
+IRP_MJ_CREATE_NAMED_PIPE|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_CLOSE|0xFFFFF8043C59C460|C:\Windows\System32\drivers\dxgkrnl.sys|0xFFFFF8043C59C460|C:\Windows\System32\drivers\dxgkrnl.sys
+IRP_MJ_READ|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_WRITE|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_QUERY_INFORMATION|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_SET_INFORMATION|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_QUERY_EA|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_SET_EA|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_FLUSH_BUFFERS|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_QUERY_VOLUME_INFORMATION|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_SET_VOLUME_INFORMATION|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_DIRECTORY_CONTROL|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_FILE_SYSTEM_CONTROL|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_DEVICE_CONTROL|0xFFFFF8043C5B27F0|C:\Windows\System32\drivers\dxgkrnl.sys|0xFFFFF8043C5B27F0|C:\Windows\System32\drivers\dxgkrnl.sys
+IRP_MJ_INTERNAL_DEVICE_CONTROL|0xFFFFF8043C5BB470|C:\Windows\System32\drivers\dxgkrnl.sys|0xFFFFF8043C5BB470|C:\Windows\System32\drivers\dxgkrnl.sys
+IRP_MJ_SHUTDOWN|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_LOCK_CONTROL|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_CLEANUP|0xFFFFF8043C59C460|C:\Windows\System32\drivers\dxgkrnl.sys|0xFFFFF8043C59C460|C:\Windows\System32\drivers\dxgkrnl.sys
+IRP_MJ_CREATE_MAILSLOT|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_QUERY_SECURITY|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_SET_SECURITY|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_POWER|0xFFFFF8043C5B9820|C:\Windows\System32\drivers\dxgkrnl.sys|0xFFFFF8043C5B9820|C:\Windows\System32\drivers\dxgkrnl.sys
+IRP_MJ_SYSTEM_CONTROL|0xFFFFF8043C4525F0|C:\Windows\System32\drivers\dxgkrnl.sys|0xFFFFF8043C4525F0|C:\Windows\System32\drivers\dxgkrnl.sys
+IRP_MJ_DEVICE_CHANGE|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_QUERY_QUOTA|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_SET_QUOTA|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe|0xFFFFF804AA86F2F0|C:\Windows\system32\ntoskrnl.exe
+IRP_MJ_PNP|0xFFFFF8043C5CEED0|C:\Windows\System32\drivers\dxgkrnl.sys|0xFFFFF8043C5CEED0|C:\Windows\System32\drivers\dxgkrnl.sys
+FastIoDispatch|0x0|-|-|无
+DATA_END
+===SNOWSWORD_CUI_END===

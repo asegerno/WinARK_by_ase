@@ -1,0 +1,137 @@
+==============================================================================
+Phase 2 WDDM baseline 真值对比：VB(--diag-log 实测) vs Core(重放 live 快照)
+==============================================================================
+
+------------------------------------------------------------------------------
+igdkmdn64   (igdkmdn64)
+------------------------------------------------------------------------------
+  model          VB=WDDM/100   Core=WDDM/100   OK
+  slot count     VB=8   Core=8   OK
+  dxgkrnl load   Core base=0xFFFFF8043C220000 imageSize=0x4E9000 fileSize=0x4E85B0
+  VB     dxgkrnl base=0xFFFFF8043C220000 fileSize(观测)=0x4E85
+  runtimeFns     VB=85   Core=8532
+  frameworkOwned VB(=[MERGE] 行数)=8   Core=0
+
+  slot                                   VB rva   Core rva   verdict
+  IRP_MJ_CLEANUP                       0x37C460   0x37C460   OK
+  IRP_MJ_CLOSE                         0x37C460   0x37C460   OK
+  IRP_MJ_CREATE                        0x38C780   0x38C780   OK
+  IRP_MJ_DEVICE_CONTROL                0x3927F0   0x3927F0   OK
+  IRP_MJ_INTERNAL_DEVICE_CONTROL       0x39B470   0x39B470   OK
+  IRP_MJ_PNP                           0x3AEED0   0x3AEED0   OK
+  IRP_MJ_POWER                         0x399820   0x399820   OK
+  IRP_MJ_SYSTEM_CONTROL                0x2325F0   0x2325F0   OK
+
+  ==> igdkmdn64: PASS
+
+------------------------------------------------------------------------------
+BasicRender   (BasicRender)
+------------------------------------------------------------------------------
+  model          VB=WDDM/80   Core=WDDM/80   OK
+  slot count     VB=8   Core=8   OK
+  dxgkrnl load   Core base=0xFFFFF8043C220000 imageSize=0x4E9000 fileSize=0x4E85B0
+  VB     dxgkrnl base=0xFFFFF8043C220000 fileSize(观测)=0x4E85
+  runtimeFns     VB=85   Core=8532
+  frameworkOwned VB(=[MERGE] 行数)=8   Core=0
+
+  slot                                   VB rva   Core rva   verdict
+  IRP_MJ_CLEANUP                       0x37C460   0x37C460   OK
+  IRP_MJ_CLOSE                         0x37C460   0x37C460   OK
+  IRP_MJ_CREATE                        0x38C780   0x38C780   OK
+  IRP_MJ_DEVICE_CONTROL                0x3927F0   0x3927F0   OK
+  IRP_MJ_INTERNAL_DEVICE_CONTROL       0x39B470   0x39B470   OK
+  IRP_MJ_PNP                           0x3AEED0   0x3AEED0   OK
+  IRP_MJ_POWER                         0x399820   0x399820   OK
+  IRP_MJ_SYSTEM_CONTROL                0x2325F0   0x2325F0   OK
+
+  ==> BasicRender: PASS
+
+------------------------------------------------------------------------------
+IndirectKmd   (IndirectKmd)
+------------------------------------------------------------------------------
+  model          VB=WDDM/90   Core=WDDM/90   OK
+  slot count     VB=28   Core=28   OK
+  dxgkrnl load   Core base=0xFFFFF8043C220000 imageSize=0x4E9000 fileSize=0x4E85B0
+  VB     dxgkrnl base=0xFFFFF8043C220000 fileSize(观测)=0x4E85
+  runtimeFns     VB=85   Core=8532
+  frameworkOwned VB(=[MERGE] 行数)=28   Core=0
+
+  slot                                   VB rva   Core rva   verdict
+  IRP_MJ_CLEANUP                       0x37C460   0x37C460   OK
+  IRP_MJ_CLOSE                         0x37C460   0x37C460   OK
+  IRP_MJ_CREATE                        0x38C780   0x38C780   OK
+  IRP_MJ_CREATE_MAILSLOT                0x7CDC0    0x7CDC0   OK
+  IRP_MJ_CREATE_NAMED_PIPE              0x7CDC0    0x7CDC0   OK
+  IRP_MJ_DEVICE_CHANGE                  0x7CDC0    0x7CDC0   OK
+  IRP_MJ_DEVICE_CONTROL                0x3927F0   0x3927F0   OK
+  IRP_MJ_DIRECTORY_CONTROL              0x7CDC0    0x7CDC0   OK
+  IRP_MJ_FILE_SYSTEM_CONTROL            0x7CDC0    0x7CDC0   OK
+  IRP_MJ_FLUSH_BUFFERS                  0x7CDC0    0x7CDC0   OK
+  IRP_MJ_INTERNAL_DEVICE_CONTROL       0x39B470   0x39B470   OK
+  IRP_MJ_LOCK_CONTROL                   0x7CDC0    0x7CDC0   OK
+  IRP_MJ_PNP                           0x3AEED0   0x3AEED0   OK
+  IRP_MJ_POWER                         0x399820   0x399820   OK
+  IRP_MJ_QUERY_EA                       0x7CDC0    0x7CDC0   OK
+  IRP_MJ_QUERY_INFORMATION              0x7CDC0    0x7CDC0   OK
+  IRP_MJ_QUERY_QUOTA                    0x7CDC0    0x7CDC0   OK
+  IRP_MJ_QUERY_SECURITY                 0x7CDC0    0x7CDC0   OK
+  IRP_MJ_QUERY_VOLUME_INFORMATION       0x7CDC0    0x7CDC0   OK
+  IRP_MJ_READ                           0x7CDC0    0x7CDC0   OK
+  IRP_MJ_SET_EA                         0x7CDC0    0x7CDC0   OK
+  IRP_MJ_SET_INFORMATION                0x7CDC0    0x7CDC0   OK
+  IRP_MJ_SET_QUOTA                      0x7CDC0    0x7CDC0   OK
+  IRP_MJ_SET_SECURITY                   0x7CDC0    0x7CDC0   OK
+  IRP_MJ_SET_VOLUME_INFORMATION         0x7CDC0    0x7CDC0   OK
+  IRP_MJ_SHUTDOWN                       0x7CDC0    0x7CDC0   OK
+  IRP_MJ_SYSTEM_CONTROL                0x2325F0   0x2325F0   OK
+  IRP_MJ_WRITE                          0x7CDC0    0x7CDC0   OK
+
+  ==> IndirectKmd: PASS
+
+------------------------------------------------------------------------------
+npu_kmd   (npu_kmd)
+------------------------------------------------------------------------------
+  model          VB=WDDM/100   Core=WDDM/100   OK
+  slot count     VB=8   Core=8   OK
+  dxgkrnl load   Core base=0xFFFFF8043C220000 imageSize=0x4E9000 fileSize=0x4E85B0
+  VB     dxgkrnl base=0xFFFFF8043C220000 fileSize(观测)=0x4E85
+  runtimeFns     VB=85   Core=8532
+  frameworkOwned VB(=[MERGE] 行数)=8   Core=0
+
+  slot                                   VB rva   Core rva   verdict
+  IRP_MJ_CLEANUP                       0x37C460   0x37C460   OK
+  IRP_MJ_CLOSE                         0x37C460   0x37C460   OK
+  IRP_MJ_CREATE                        0x38C780   0x38C780   OK
+  IRP_MJ_DEVICE_CONTROL                0x3927F0   0x3927F0   OK
+  IRP_MJ_INTERNAL_DEVICE_CONTROL       0x39B470   0x39B470   OK
+  IRP_MJ_PNP                           0x3AEED0   0x3AEED0   OK
+  IRP_MJ_POWER                         0x399820   0x399820   OK
+  IRP_MJ_SYSTEM_CONTROL                0x2325F0   0x2325F0   OK
+
+  ==> npu_kmd: PASS
+
+------------------------------------------------------------------------------
+BasicDisplay   (BasicDisplay)
+------------------------------------------------------------------------------
+  model          VB=WDDM/100   Core=WDDM/100   OK
+  slot count     VB=8   Core=8   OK
+  dxgkrnl load   Core base=0xFFFFF8043C220000 imageSize=0x4E9000 fileSize=0x4E85B0
+  VB     dxgkrnl base=0xFFFFF8043C220000 fileSize(观测)=0x4E85
+  runtimeFns     VB=85   Core=8532
+  frameworkOwned VB(=[MERGE] 行数)=8   Core=0
+
+  slot                                   VB rva   Core rva   verdict
+  IRP_MJ_CLEANUP                       0x37C460   0x37C460   OK
+  IRP_MJ_CLOSE                         0x37C460   0x37C460   OK
+  IRP_MJ_CREATE                        0x38C780   0x38C780   OK
+  IRP_MJ_DEVICE_CONTROL                0x3927F0   0x3927F0   OK
+  IRP_MJ_INTERNAL_DEVICE_CONTROL       0x39B470   0x39B470   OK
+  IRP_MJ_PNP                           0x3AEED0   0x3AEED0   OK
+  IRP_MJ_POWER                         0x399820   0x399820   OK
+  IRP_MJ_SYSTEM_CONTROL                0x2325F0   0x2325F0   OK
+
+  ==> BasicDisplay: PASS
+
+==============================================================================
+OVERALL: PASS
+==============================================================================

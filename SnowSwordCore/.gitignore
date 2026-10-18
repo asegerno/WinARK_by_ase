@@ -1,0 +1,41 @@
+# Visual Studio
+.vs/
+.vs
+*.suo
+*.user
+*.aps
+*.recipe
+*.tlog
+*.log
+*.ipch
+*.sdf
+*.cache
+*.VC.db
+
+# Build trees
+x64/
+Debug/
+Release/
+[Bb]uild/
+
+# Build intermediates / outputs
+*.obj
+*.lib
+*.dll
+*.exe
+*.pdb
+*.exp
+*.iobj
+*.ipdb
+*.ilk
+*.idb
+*.res
+*.tmp
+*.bak
+
+# vendored dependency: the udis86 static library IS part of the repo
+!third_party/**/*.lib
+
+# Python
+__pycache__/
+*.pyc
